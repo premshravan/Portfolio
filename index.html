@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" href="/assets/shravan.jpeg" type="image/icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueires.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Prem Shravan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburder-nav">
+      <div class="logo">Prem Shravan</div>
+      <div class="hamburder-menu">
+        <div class="hamburder-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <!-- Image section -->
+      <div class="section_image-container">
+        <img class="image" src="./assets/shravan.jpeg" alt="profile_pic" />
+      </div>
+
+      <!-- Info section -->
+      <div class="section_text">
+        <p class="p1">Helow,I'm</p>
+        <h4 class="title">Prem Shravan</h4>
+        <p class="p4">Software Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-cv" onclick="window.open('./assets/prem.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-info" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="social-conatiner">
+          <img
+            src="./assets/linkedIn.jpg"
+            alt="linkedIn"
+            class="icon"
+            onclick="location.href='https:linkedin.com/in/premshravan/'"
+          />
+          <img
+            src="./assets/GitHub.png"
+            alt="linkedIn"
+            class="icon"
+            onclick="location.href='https:github.com/premshravan'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_image-container">
+          <img src="./assets/prem.jpg" alt="profile" class="about-pic" />
+        </div>
+        <div class="about-datils">
+          <div class="about-container">
+            <div class="detls-container">
+              <img src="./assets/experince.png" alt="Experience" class="icon" />
+
+              <h2>Experience</h2>
+              <p>6 Months <br />Frontend Development</p>
+            </div>
+
+            <div class="detls-container">
+              <img src="./assets/education.png" alt="Education" class="icon" />
+
+              <h2>Education</h2>
+              <p>
+                Bacheloer of Business Administration - BBA<br />Master of
+                Business Administration- MBA
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              With an MBA in Finance and a passion for technology, I am on a journey to transition into the dynamic world of software development. Currently immersed in self-learning, I am honing my skills to become a proficient MERN stack developer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-container">
+        <div class="about-container">
+          <div class="detls-container">
+            <h2 class="experience-subtitle">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwindcss</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="detls-container">
+            <h2 class="experience-subtitle">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Next JS</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checked.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="p1">Browse My recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experince-container">
+        <div class="detls-container color-container">
+          <div class="article-container">
+            <img src="./assets/coffe-project1.png" alt="" class="project-image" />
+          </div>
+          <h2 class="project-title">React project Coffee</h2>
+          <div class="btn-container">
+            <button
+              class="ptoject-btn btn"
+              onclick="location.href='https://github.com/premshravan/react-coffee'"
+            >
+              Github
+            </button>
+            <button
+              class="ptoject-btn btn"
+              onclick="location.href='https://react-coffe.netlify.app/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="detls-container color-container">
+          <div class="article-container">
+            <img src="./assets/ecommerce-project2.png" alt="" class="project-image" />
+          </div>
+          <h2 class="project-title">React E-commerce Project</h2>
+          <div class="btn-container">
+            <button
+              class="ptoject-btn btn"
+              onclick="location.href='https://github.com/premshravan/Ecommerce-react'"
+            >
+              Github
+            </button>
+            <button
+              class="ptoject-btn btn"
+              onclick="location.href='https://ecommerce-react-eight-rosy.vercel.app/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="detls-container color-container">
+          <div class="article-container">
+            <img src="./assets/e-com-furniture-project-3.png" alt="" class="project-image" />
+          </div>
+          <h2 class="project-title">React E-commerce Furniture Project</h2>
+          <div class="btn-container">
+            <button
+              class="ptoject-btn btn"
+              onclick="location.href='https:github.com/premshravan'"
+            >
+              Github
+            </button>
+            <button
+              class="ptoject-btn btn"
+              onclick="location.href='https://e-com-react-app-furniture.vercel.app/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="detls-container color-container">
+          <div class="article-container">
+            <img src="./assets/Next.js-shopyFy-project-4.png" alt="" class="project-image" />
+          </div>
+          <h2 class="project-title">Next JS  E-commerce FullStack Project</h2>
+          <div class="btn-container">
+            <button
+              class="ptoject-btn btn"
+              onclick="location.href='https://github.com/premshravan/E-commerce-NextJsApp'"
+            >
+              Github
+            </button>
+            <button
+              class="ptoject-btn btn"
+              onclick="location.href='https://e-commerce-next-js-app-kxy3.vercel.app/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+        <p class="p1"> Get in Touch </p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper">
+          <div class="contact-info-container">  
+              <img src="./assets/mail.png" alt="Email" class="icon contact-icon">
+              <p><a href="mailto:premshravan7@gmail.com">premshravan7@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">  
+            <img src="./assets/linkedIn.jpg" alt="Email" class="icon contact-icon">
+            <p><a href="https://www.linkedIn.com/in/premshravan">LinkedIn</a></p>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Prem Shravan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
